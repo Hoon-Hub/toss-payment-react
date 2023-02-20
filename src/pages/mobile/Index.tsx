@@ -1,8 +1,8 @@
-import React from 'react'
-
 const MobileIndex = () => {
   return (
-    <div>Index</div>
+    <div>
+      mobile index
+    </div>
   )
 }
 
