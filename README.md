@@ -1,6 +1,6 @@
---- TOSS payment : Buy me a Coffee☕
+## TOSS payment : Buy me a Coffee☕
 
---- Tools 🔨
+### Tools 🔨
 ```
 React.js, TypeScript
 ```
