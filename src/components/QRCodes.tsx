@@ -1,7 +1,7 @@
 import styles from '../styles/index.module.css'
 import Button from 'react-bootstrap/Button';
 import { useState } from 'react';
-import {  BrowserView,  MobileView } from "react-device-detect";
+import {  BrowserView, isMobile, MobileView, isBrowser } from "react-device-detect";
 
 type linkType = {
   kakaoLink: string
@@ -40,12 +40,12 @@ const QRCodes = ({kakaoLink, tossLink}: linkType) => {
         Toss - Buy me a Coffee ☕
       </Button>
       <BrowserView>
-        { kakao ? <KakaoIMG /> : '' }
-        { toss ? <TossIMG /> : '' }
+        { kakao && isBrowser ? <KakaoIMG /> : '' }
+        { toss && isBrowser ? <TossIMG /> : '' }
       </BrowserView>
       <MobileView>
-        {kakao ? window.location.href=`${kakaoLink}` : ''}
-        {toss ? window.location.href=`${tossLink}` : ''}
+        { kakao && isMobile ? window.location.href=`${kakaoLink}` : ''}
+        { toss && isMobile ? window.location.href=`${tossLink}` : ''}
       </MobileView>
     </div>
   )
