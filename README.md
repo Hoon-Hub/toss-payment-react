@@ -38,3 +38,8 @@ const myInfo: myInfoType = {
 npm install
 npm run start
 ```
+
+### Updated 🚀
+- 02.21. 데스크탑, 모바일 구분을 추가하였습니다. 
+  (모바일, 데스크톱 각각 별도의 링크가 필요합니다.)
+     
