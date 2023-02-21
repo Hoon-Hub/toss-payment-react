@@ -10,7 +10,7 @@ React.js, TypeScript
 기존에 이미 있는 내용이 많습니다.   
 카카오, 토스에 대한 QR코드 출력을 설정해놓았습니다!   
 
-### 바로 수정이 가능합니다 😁
+### 바로 수정이 가능합니다 😁   
 - 커스터마이징 해주세요!   
 1. src/pages/Index.tsx 내의 파일 수정
 ```
@@ -20,7 +20,9 @@ const myInfo: myInfoType = {
   workFor: ['Javascript','React.js', 'Vue.js'], //집중하고 있는 내용
   tistoryLink: 'https://code-hoon.tistory.com', //티스토리링크
   githubLink: 'https://github.com/Hoon-Hub', //깃헙링크
-  notionLink: 'https://k-sanghoon.notion.site/31144445ed6b42be9f1e0afee2245a46' //노션링크
+  notionLink: 'https://k-sanghoon.notion.site/31144445ed6b42be9f1e0afee2245a46', //노션링크
+  kakaoLink: 'https://qr.kakaopay.com/Ej7jPN3lW', //카카오페이 링크
+  tossLink: 'https://toss.me/ksanghoon' //토스아이디 만들어서 넣어주세요
 }
 ```
 
@@ -30,3 +32,9 @@ const myInfo: myInfoType = {
 ```
   src 주소는 개인 블로그 등에 올리고, [주소로 복사] 기능을 사용하시면 됩니다.
 
+   
+### How to
+```
+npm install
+npm run start
+```
